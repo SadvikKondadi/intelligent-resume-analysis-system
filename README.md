@@ -183,10 +183,20 @@ http://localhost:5173
 # Screenshots
 
 ## Home Page
-(Add screenshot here)
+
+![Home Page](screenshots/home.png)
+
+---
 
 ## ATS Analysis Result
-(Add screenshot here)
+
+![ATS Result](screenshots/result1.png)
+
+---
+
+## ATS Suggestions Result
+
+![ATS Suggestions](screenshots/result2.png)
 
 ---
 

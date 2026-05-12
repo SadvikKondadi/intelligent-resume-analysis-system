@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b, #2563eb);
+  color: white;
+}
+
+.page {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.hero {
+  min-height: 88vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 50px;
+  padding: 60px 8%;
+}
+
+.heroText {
+  animation: slideUp 0.8s ease;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.heroText h1 {
+  font-size: 64px;
+  line-height: 1.05;
+  margin: 0;
+}
+
+.heroText p {
+  font-size: 19px;
+  color: #dbeafe;
+  max-width: 620px;
+  line-height: 1.7;
+}
+
+.glassCard {
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 28px;
+  padding: 35px;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.35);
+  animation: floatIn 0.9s ease;
+}
+
+.uploadBox {
+  border: 2px dashed rgba(255, 255, 255, 0.45);
+  border-radius: 20px;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.12);
+  margin-bottom: 25px;
+}
+
+.uploadBox label {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.uploadBox p {
+  color: #dbeafe;
+}
+
+.uploadBox h4 {
+  color: #bbf7d0;
+}
+
+input[type="file"] {
+  width: 100%;
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.jdBox {
+  width: 100%;
+  min-height: 260px;
+  resize: vertical;
+  border: none;
+  outline: none;
+  border-radius: 18px;
+  padding: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 17px;
+  border: none;
+  border-radius: 16px;
+  background: #22c55e;
+  color: #052e16;
+  font-size: 18px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(34, 197, 94, 0.35);
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.resultSection {
+  padding: 40px 8% 80px;
+}
+
+.scoreCard {
+  max-width: 500px;
+  margin: 0 auto 35px;
+  text-align: center;
+  background: white;
+  color: #0f172a;
+  padding: 35px;
+  border-radius: 28px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+.scoreCard h2 {
+  font-size: 72px;
+  margin: 0;
+  color: #16a34a;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.card {
+  background: white;
+  color: #111827;
+  padding: 28px;
+  border-radius: 24px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.2);
+  animation: slideUp 0.7s ease;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #1d4ed8;
+}
+
+.metric {
+  font-size: 34px;
+  font-weight: bold;
+  color: #16a34a;
+}
+
+.wide {
+  grid-column: span 2;
+}
+
+li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background: rgba(0, 0, 0, 0.25);
+  color: #dbeafe;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatIn {
+  from {
+    opacity: 0;
+    transform: scale(0.94) translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 40px 6%;
+  }
+
+  .heroText h1 {
+    font-size: 42px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wide {
+    grid-column: span 1;
+  }
+}

@@ -42,7 +42,7 @@ function App() {
     <div className="page">
       <section className="hero">
         <div className="heroText">
-          <span className="badge">AI Powered Resume Optimizer</span>
+          <span className="badge">Intelligent Resume Analysis System</span>
           <h1>Smart ATS Resume Analyzer</h1>
           <p>
             Upload your resume, paste any job description, and get instant match

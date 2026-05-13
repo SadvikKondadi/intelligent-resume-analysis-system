@@ -1,4 +1,4 @@
-# AI Resume Analyzer
+# Intelligent-Resume-Analysis-System
 
 🚀 Live Website: https://ai-resume-analyzer-xi-topaz.vercel.app
 

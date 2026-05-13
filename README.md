@@ -1,6 +1,6 @@
 # Intelligent-Resume-Analysis-System
 
-🚀 Live Website: https://ai-resume-analyzer-xi-topaz.vercel.app
+🚀 Live Website: https://intelligent-resume-analysis.vercel.app
 
 📂 GitHub Repository: https://github.com/SadvikKondadi/ai-resume-analyzer
 
